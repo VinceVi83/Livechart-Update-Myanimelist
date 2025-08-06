@@ -3,7 +3,7 @@ It export your last completed anime updated from Livechart in xml.<br>
 You can use this XML generated from script to import to your Myanimelist account.<br>
 
 For info, if you want export all your library from Livechart, contact the support https://www.livechart.me/contact, they can generate for you a XML MAL compatible.<br>
-My script is just to update my currect change in Livechart to MAL.
+My script is just to update my current change in Livechart to MAL.
 
 This script use python3<br>
 
