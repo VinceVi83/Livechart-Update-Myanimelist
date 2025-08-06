@@ -13,11 +13,11 @@ py -m playwright install
 
 To use script, you need to get html from www.livechart.me/users/library
 How to get it :
-On browser, go to www.livechart.me/users/library
-Sort by "My Finished Date"
-right-click -> inspect element
-In tab : Elements to Sources
-Save file library in same path as python script
+  On browser, go to www.livechart.me/users/library
+  Sort by "My Finished Date"
+  right-click -> inspect element
+  In tab : Elements to Sources
+  Save file library in same path as python script
 
 You need to change this value in livechartExportUpdate.py "last = 2 # should be between 1-100"
 It will take your xxx last completed anime from page for export.
