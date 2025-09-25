@@ -22,7 +22,7 @@ BASE_URL = "https://www.livechart.me/anime/"
 class Anime:
     def __init__(self, anime_id, status, episodes_watched=0, rating=0, notes=""):
         self.anime_id = anime_id
-        self.status = status or "Completed"
+        self.status = status.capitalize()
         self.episodes_watched = episodes_watched
         self.rating = rating
         self.notes = notes
@@ -96,8 +96,8 @@ def main(html_file="My List _ LiveChart.me.html", last=20):
     parsed = json.loads(data)
 
     anime_list = []
-    for i, (anime_id, info) in enumerate(parsed.items()):
-        if last and i >= last:
+    for anime_id, info in parsed.items():
+        if last and len(anime_list) >= last:
             break
         anime_list.append(Anime(
             anime_id=anime_id,
